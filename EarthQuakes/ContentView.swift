@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var networkingManager = NetworkingManager()
+    
     var body: some View {
         Text("Hello, world!")
             .padding()
