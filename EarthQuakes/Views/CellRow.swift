@@ -28,12 +28,29 @@ struct CellRow: View {
                 Text(data.properties.place)
                     .foregroundColor(.gray)
                     .bold()
+                Text("Time: \(timeConverter(timeStamp: data.properties.time))")
             }
                 
             }
             
         }
     }
+func timeConverter(timeStamp: Double) -> String {
+    
+    let unixTimestamp = timeStamp / 1000 // so we can get milliseconds!
+    
+    let date = Date(timeIntervalSince1970: unixTimestamp)
+    
+    let dateFormatter = DateFormatter()
+    dateFormatter.timeZone = TimeZone(abbreviation: "GMT")
+    
+    dateFormatter.locale = NSLocale.current
+    dateFormatter.dateFormat = "dd MMM YY, hh:mm a"
+    
+    return dateFormatter.string(from: date)
+    
+    
+}
 
 
 //struct CellRow_Previews: PreviewProvider {
