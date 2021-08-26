@@ -13,6 +13,7 @@
 		4465051926D6E6A3002BB6C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4465051826D6E6A3002BB6C5 /* Preview Assets.xcassets */; };
 		4465052226D6E71A002BB6C5 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4465052126D6E71A002BB6C5 /* NetworkingManager.swift */; };
 		4465052626D6E803002BB6C5 /* Quake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4465052526D6E803002BB6C5 /* Quake.swift */; };
+		4465054C26D726D8002BB6C5 /* CellRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4465054B26D726D8002BB6C5 /* CellRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4465051A26D6E6A3002BB6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4465052126D6E71A002BB6C5 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		4465052526D6E803002BB6C5 /* Quake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quake.swift; sourceTree = "<group>"; };
+		4465054B26D726D8002BB6C5 /* CellRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		4465051026D6E69F002BB6C5 /* EarthQuakes */ = {
 			isa = PBXGroup;
 			children = (
+				4465054A26D726B4002BB6C5 /* Views */,
 				4465052426D6E7F0002BB6C5 /* Model */,
 				4465051126D6E69F002BB6C5 /* EarthQuakesApp.swift */,
 				4465051326D6E69F002BB6C5 /* ContentView.swift */,
@@ -81,6 +84,14 @@
 				4465052526D6E803002BB6C5 /* Quake.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4465054A26D726B4002BB6C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4465054B26D726D8002BB6C5 /* CellRow.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +166,7 @@
 				4465052226D6E71A002BB6C5 /* NetworkingManager.swift in Sources */,
 				4465052626D6E803002BB6C5 /* Quake.swift in Sources */,
 				4465051426D6E69F002BB6C5 /* ContentView.swift in Sources */,
+				4465054C26D726D8002BB6C5 /* CellRow.swift in Sources */,
 				4465051226D6E69F002BB6C5 /* EarthQuakesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

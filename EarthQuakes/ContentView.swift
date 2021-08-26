@@ -13,7 +13,9 @@ struct ContentView: View {
     
     var body: some View {
         List(networkingManager.dataList.features, id: \.properties) {
-            data in Text(data.properties.place)
+            data in
+            CellRow(data: data)
+            // Text(data.properties.place)
         }
     }
 }
