@@ -12,8 +12,9 @@ struct ContentView: View {
     @ObservedObject var networkingManager = NetworkingManager()
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(networkingManager.dataList.features, id: \.properties) {
+            data in Text(data.properties.place)
+        }
     }
 }
 

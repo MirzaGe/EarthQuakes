@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Features: Decodable, Hashable {
+struct Features : Decodable, Hashable {
     var properties: Properties
     var geometry: Geometry
 }
